@@ -10,6 +10,9 @@
                         <li class="nav-item active">
                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="{{url('/book_store')}}">Books <span class="sr-only">(current)</span></a>
+                        </li>
 
                         @if (Route::has('login'))
 

@@ -33,4 +33,9 @@ class HomeController extends Controller
         $product=product::find($id);
         return view('home.product_details', compact('product'));
     }
+
+    public function book_store(){
+        $product=product::paginate(6);
+        return view('home.book_store' , compact('product'));
+    }
 }
